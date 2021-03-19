@@ -121,7 +121,7 @@ class FeedSpeedPanel():
 
         self.rpm_result.setText(str(rpm))
         self.feed_result.setText(str(feed) + " mm/min")
-        self.hp_result.setText(str(round(Hp, 2)) + " hp")
+        self.hp_result.setText(str(round(Hp, 2)) + " hp, " + str(round(Hp*745.7, 1)) + " watts" )
 
     def show(self):
         self.form.show()
